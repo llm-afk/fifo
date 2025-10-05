@@ -63,14 +63,3 @@ void fifo_drop(fifo_t *fifo, uint32_t len)
 {
     fifo->read += len;
 }
-
-
-#include <stdio.h>
-int main()
-{
-    uint8_t a = 0;
-    printf("%d\n", a);
-    __atomic_clear(&a, __ATOMIC_RELAXED);
-    printf("%d\n", a);
-}
-
